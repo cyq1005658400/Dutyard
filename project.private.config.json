@@ -1,0 +1,77 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/demo2/demo2",
+          "pathName": "pages/demo2/demo2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/list/list",
+          "pathName": "pages/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/add/add",
+          "pathName": "pages/add/add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/timetable/timetable",
+          "pathName": "pages/timetable/timetable",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/temp/temp",
+          "pathName": "pages/temp/temp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userInfo/userInfo",
+          "pathName": "pages/userInfo/userInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/todolist/todolist",
+          "pathName": "pages/todolist/todolist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

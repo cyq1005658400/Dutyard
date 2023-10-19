@@ -1,0 +1,53 @@
+<view class="add">
+  <view class="title">
+    创建您的新笔记
+  </view>
+
+  <view class="contentinfo">
+    请选择笔记学科
+  </view>
+  <view class='in'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="contentinfo">
+    标题
+  </view>
+  <view class="in">
+    <input bindinput='title' placeholder="请输入标题" focus="{{focus}}" class="input_text input_title" />
+  </view>
+
+  <view class="contentinfo">
+    请上传图片
+  </view>
+  <view class="pics">
+    <!-- 这里是添加图片的存放模板 -->
+    <!-- <view class="pic">
+      
+    </view> -->
+
+    <view  class="pics">
+      <view wx:for="{{img}}" class="inputed_pic">
+        <image mode="aspectFill" class="note_pic" src='{{img[index]}}'></image>
+      </view>
+      <view bindtap='picfunction' class="input_pic">
+        <mp-icon type="field" icon="camera" color="#999999" size="{{50}}"></mp-icon>
+        <view>添加图片</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="contentinfo">
+    内容
+  </view>
+  <view class='in'>
+    <textarea bindinput="content" maxlength="300" class="input_text input_content" placeholder="请输入笔记内容"></textarea>
+  </view>
+
+  <button style="width:700rpx" type="primary" bindtap='submit'>提交</button>
+
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上传笔记",
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon"
+  }
+}

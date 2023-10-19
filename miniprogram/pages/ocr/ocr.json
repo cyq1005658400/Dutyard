@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bottom-button1": "/components/bottom-button/index1",
+    "result-bubble": "/components/result-bubble/index",
+    "ocr-navigator": "plugin://ocr-plugin/ocr-navigator"
+  }
+}

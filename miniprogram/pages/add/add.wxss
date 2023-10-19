@@ -1,0 +1,86 @@
+page{
+  background-color: #f8f8f8;
+}
+
+.title{
+padding-left:35rpx;
+color:black;
+font-weight: bold;
+font-size:60rpx;
+}
+
+
+.radio-group{
+padding-left:25rpx;
+color:#5c5c5c;
+}
+
+text.subject{
+width: 120rpx;
+
+}
+
+
+.contentinfo{
+padding-left:25rpx;
+margin-top: 20rpx;
+font-size:30rpx;
+color:#999999;
+}
+
+view.in{
+background-color: white;
+font-size:40rpx;
+border-top:2rpx #D9D9D9 solid;
+border-bottom:2rpx #D9D9D9 solid;
+}
+
+.input_text{
+padding: 10rpx 25rpx;
+}
+
+.input_title{
+height:50rpx;
+}
+
+.input_content{
+height:500rpx;
+width:725rpx;
+}
+
+view.pic{
+height:233rpx;
+width:233rpx;
+padding: 5rpx;
+text-align: center;
+
+}
+
+
+
+.pics{
+  width:100%;
+  margin:0 15rpx;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.input_pic{
+height:195rpx;
+width:195rpx;
+background-color: #D9D9D9;
+padding:15rpx;
+color:#999999;
+border:#D9D9D9 5rpx solid;
+text-align: center;
+}
+
+.inputed_pic{
+  padding:5rpx;
+}
+
+image.note_pic{
+  height:225rpx;
+  width:225rpx;
+  border:#D9D9D9 5rpx solid;
+  }

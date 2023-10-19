@@ -1,0 +1,84 @@
+<!--pages/demo2/demo.wxml-->
+<view class="time_table">
+  <view class="control">
+    <button class="nor change_time" hover-class="s_change" bindtap="reduce_date" style="width:120rpx;height:45rpx">
+      上一周
+    </button>
+    <button class="nor month" style="width:200rpx;height:45rpx">{{year}}年{{month}}月</button>
+    <button class="nor change_time" bindtap="increase_date" hover-class="s_change" style="width:120rpx;height:45rpx">
+      <view class="change_time">下一周</view>
+    </button>
+  </view>
+  <view class="control">
+  </view>
+  <view class="tip">长按格子备注，日期和时间段均可选中，再次点击取消选中，点击清空则删除选中时间所有计划</view>
+  <view class="table">
+    <view wx:for="{{row_num}}" wx:for-index="row">
+      <view wx:for="{{col_num}}" wx:for-index="col">
+        <button class="weui-btn" type="default" bindtap="openConfirm" wx:if="{{row == 0 & col == 0 }}" class="nor fun"
+          style="width:90rpx;height:90rpx;padding:0rpx">
+          <text class="clear">清空</text>
+        </button>
+        <button wx:elif="{{row == 0 & col > 0 }}" class="nor date  {{ (week_differ == 0 & col == week_num)?'today':''}}"
+          style="width:90rpx;height:90rpx;padding:0rpx" bindtap="choose_date" data-col="{{col}}">
+          <view class="{{(choose_week_differ == 0 & col == choose_date)?'choose_date':''}}">
+            <text>{{ day+col > month_day[month]? day+col-month_day[month] : day+col}}号
+              周{{week_list[col]}}</text>
+          </view>
+        </button>
+        <button wx:elif="{{col == 0 & row > 0}}" bindtap="choose_row" data-row="{{row}}" class="nor time_block_num"
+          style="width:90rpx;height:150rpx">
+          <text class="time_block_num {{choose_row==row?'choose_row':''}}">第
+            {{num_list[row]}}
+            节</text>
+        </button>
+        <button wx:elif="{{table[(row-1)*7+col-1].flag==1}}"
+          class="nor time_block subject {{sc[event[table[(row-1)*7+col-1].pos].subject]}}"
+          hover-class="{{'s_'+sc[event[table[(row-1)*7+col-1].pos].subject]}}" bindtap="open" bindlongpress="openmodal"
+          style="width:90rpx;height:150rpx" data-row="{{row}}" data-col="{{col}}">
+          <view class="subject_title">{{subject[event[table[(row-1)*7+col-1].pos].subject]}}</view>
+          <text class="subject_dis">{{event[table[(row-1)*7+col-1].pos].remark}}</text>
+        </button>
+        <button wx:else="{{col == 0 & row > 0}}" class="nor time_block" bindtap="open" style="width:90rpx;height:150rpx"
+          data-row="{{row}}" data-col="{{col}}">
+        </button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<mp-half-screen-dialog bindbuttontap="buttontap" show="{{show}}" maskClosable="true" title="选择复习科目" subTitle="单选"
+  desc="选择要上课的科目" tips="大工人，得好好学习哦" buttons="{{buttons}}"></mp-half-screen-dialog>
+
+<mp-dialog title="清空" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{fun_button}}">
+  <view wx:if="{{choose_row<1 & (choose_week_differ!=0 |choose_date < 1)}}">是否要清空<text style="color:red">本周</text>计划
+  </view>
+  <view wx:elif="{{choose_row<1 & choose_date > 0 & choose_week_differ==0}}">是否要清空<text style="color:red">当天</text>计划
+  </view>
+  <view wx:elif="{{choose_row>0 & (choose_week_differ!=0 |choose_date < 1)}}">是否要清空<text
+      style="color:red">整周本时段</text>计划</view>
+  <view wx:elif="{{choose_row>0 & choose_date > 0 & choose_week_differ==0 }}">是否要清空<text
+      style="color:red">当天当时段</text>计划</view>
+</mp-dialog>
+
+
+<modal hidden="{{hiddenmodalput}}" title="请输入你的备注" confirm-text="提交" cancel-text="取消" bindcancel="modalinput"
+  bindconfirm="modalconfirm" class="inputremark" confirm-Color="#68799E">
+  <!-- 这里可以自由选择你的输入框类型<input type='text' placeholder="请输入内容" auto-focus/> -->
+  <!-- <textarea placeholder="请输入内容"></textarea> -->
+  <input type='text' value="{{input_content}}" placeholder="具体计划" maxlength="6" focus="true"
+    bindinput="remarkconfirm" />
+</modal>
+
+<!-- <button class="filter_button" hover-class="s_btn-block" bindtap="filterOpen">
+  <mp-icon icon="transfer2" color="white" size="{{25}}"></mp-icon> 筛选
+</button>
+
+<modal id="modal" hidden="{{hiddenfilter}}" title="过滤器" no-cancel="true" confirmText="确定" bindconfirm="filterClose">
+  <view wx:for="{{4}}">
+      <button id="{{index}}" class="filterbutton {{(filter[index]==true)? sc[index+1]:''}}"
+        bindtap="filterSubject" data-index="1">{{subject[index+1]}}</button>
+        </view>
+</modal> -->
+
+<!-- <text class="request-text" wx:for="{{7}}" style="color: {{step === index + 1 ? 'red': 'black'}}">{{index + 1}}</text> -->

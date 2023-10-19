@@ -1,0 +1,40 @@
+<view class="homepage">
+  <view class="title">
+    <view class="version">
+      <image class="logo" src="cloud://cloud1-9geunwbh072707ab.636c-cloud1-9geunwbh072707ab-1306221821/start/LOGO.png">
+      </image>
+      <view class="version_title">嘉禾连理小程序</view>
+    </view>
+    <view class="update">大工人自己的朋友圈</view>
+  </view>
+  <view class="red_line"></view>
+  <swiper indicator-dots="true" indicator-color="#000000" indicator-active-color="#ff0000" autoplay="true"
+    interval="8000" duration="500" display-multiple-items="1" class="top_swiper">
+    <view wx:for="{{swiper_num}}">
+      <swiper-item>
+        <image class="top_show"
+          src="cloud://cloud1-9geunwbh072707ab.636c-cloud1-9geunwbh072707ab-1306221821/start/START{{index+1}}.jpg">
+        </image>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view class="fun_block" style="height:{{button_height}}rpx">
+    <view wx:for="{{fun_info}}" class="fun_button">
+      <button class="fun_button {{item.class}}" hover-class="s_{{item.class}}"
+        style="width:350rpx;height:{{button_height/2-40}}rpx" bindtap="function{{index+1}}">
+        <view class="fun_title"
+          style="font-size:{{(button_height/2-60)/120}};line-height:{{(button_height/2-60)/110}};">{{item.title}}</view>
+        <mp-icon type="outline" icon="{{item.icon}}" color="black" size="{{(button_height/2-90)/2.5}}"></mp-icon>
+      </button>
+    </view>
+  </view>
+
+  <view class="explaination">
+    本程序为嘉禾连理的微信小程序，所有权利归嘉禾连理开发团队所有
+  </view>
+
+  <view class="red_line in_bottom">
+  </view>
+
+</view>

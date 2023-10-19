@@ -1,0 +1,197 @@
+/* pages/demo2/demo2.wxss */
+view.control {
+  text-align: center;
+}
+
+.filter_button {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: #EB602E;
+  border: rgb(247, 164, 164) 5px solid;
+  color: white;
+  text-align: center;
+}
+
+
+button.month {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 20rpx;
+}
+
+.choose_date {
+  color: rgb(245, 180, 0) !important;
+}
+
+.choose_row {
+  color: rgb(245, 180, 0) !important;
+}
+
+button.change_time {
+  display: inline-block;
+  /* border: 3rpx rgb(190, 189, 189) solid; */
+  background-color: #F8F8F8;
+  color: #2eacff;
+  font-weight: 700;
+}
+
+.s_change {
+  background-color: #838383 !important;
+}
+
+text.clear {
+  color: #2eacff;
+}
+
+/* view.change_time{
+  font-weight: bold;
+} */
+
+view.time_table {
+  width: 720rpx;
+  float: left;
+  margin: 0rpx 15rpx 0 15rpx;
+  font-weight: normal;
+}
+
+view.table {
+  width: 720rpx;
+  float: left;
+  margin-top: 10rpx;
+  font-weight: normal;
+}
+
+button.nor {
+  line-height: 45rpx;
+  padding: 0;
+  font-weight: normal;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+view.tip {
+  text-align: center;
+  color: gray;
+  font-size: 30rpx;
+}
+
+view.tip::before {
+  content: "tip:"
+}
+
+button.fun {
+  float: left;
+  font-size: 1em;
+}
+
+button.time_block {
+  float: left;
+  font-size: 1em;
+  border: 3rpx rgb(190, 189, 189) solid;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx #e0e0e0;
+  color: #444343;
+}
+
+.today {
+  color: rgb(253, 99, 99) !important;
+}
+
+button.date {
+  line-height: 40rpx;
+  font-weight: bold;
+  float: left;
+  font-size: 30rpx;
+  color: rgb(255, 255, 255);
+  background-color: #2eacff;
+  border: 3rpx rgb(182, 182, 182) solid;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx #e0e0e0;
+}
+
+button.time_block_num {
+  float: left;
+  font-size: 30rpx;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 172, 255);
+  border: 3rpx rgb(182, 182, 182) solid;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx #e0e0e0;
+}
+
+text.time_block_num {
+  font-weight: bold;
+}
+
+text.last_week {
+  font-weight: bold;
+  color: red;
+}
+
+.subject {
+  width: 90rpx;
+  height: 150rpx;
+  float: left;
+}
+
+.subject_title {
+  font-weight: bold;
+}
+
+.subject_dis {
+  font-size: 0.8em;
+  word-break: break-all;
+}
+
+.choose_subject {
+  width: 250rpx;
+  color: black;
+}
+
+.math {
+  background-color: rgb(255, 190, 190);
+}
+
+.politic {
+  background-color: rgb(143, 238, 255);
+}
+
+.english {
+  background-color: rgb(255, 235, 121);
+}
+
+.major {
+  background-color: rgb(62, 255, 181);
+}
+
+.s_math {
+  background-color: rgb(255, 134, 134);
+}
+
+.s_politic {
+  background-color: rgb(73, 228, 255);
+}
+
+.s_english {
+  background-color: rgb(252, 222, 54);
+}
+
+.s_major {
+  background-color: rgb(41, 209, 145);
+}
+
+modal.inputremark {
+  font-weight: bold;
+}
+
+.delete {
+  color: red;
+  background-color: rgb(212, 212, 212);
+  /* padding:0  230rpx;
+  height: 70rpx;
+  width:500rpx; */
+}
+
+.filterbutton {
+  width: 60%;
+  margin: 15rpx auto;
+}

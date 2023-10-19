@@ -1,0 +1,29 @@
+<view class="index">
+  <view class="logo_dis"><text class="logo_dis">同声传译小帮手</text></view>
+  <button class="upload_image" style="width:500rpx;height:500rpx;" bindtap="tools" mode="aspectFit">
+    <mp-icon type="field" icon="mike" color="#ffffff" size="{{150}}"></mp-icon>
+    <view class="upload_image_dis">点击语音翻译</view>
+  </button>
+  <button class="upload_image" style="width:500rpx;height:500rpx;" bindtap="ocr" mode="aspectFit">
+    <mp-icon type="field" icon="camera" color="#ffffff" size="{{150}}"></mp-icon>
+    <view class="upload_image_dis">点击拍照翻译</view>
+  </button>
+  <view class="fun_view">
+    <view class="fun">
+      <text>图像
+        识别</text>
+    </view>
+    <view class="fun">
+      <text>语音
+        识别</text>
+    </view>
+    <view class="fun">
+      <text>同步
+        翻译</text>
+    </view>
+    <view class="fun">
+      <text>语音
+        合成</text>
+    </view>
+  </view>
+</view>

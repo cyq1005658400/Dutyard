@@ -1,0 +1,15 @@
+<!--detail.wxml-->
+<view class="detail">
+  <view>
+    <view class="title">{{detail_content.title}}</view>
+    <view class="cTime">{{detail_content.cTime}}</view>
+    <view wx:for="{{detail_content.img}}" class="img">
+      <image src="{{detail_content.img[index]}}"  class="in_img"  mode="widthFix"></image>
+    </view>
+    <view class="content">{{detail_content.content}}</view>
+    <button class="btn-block" bindtap="delete_message">
+      <mp-icon type="field" color="black" size="{{25}}"></mp-icon>
+      删除笔记
+    </button>
+  </view>
+</view>

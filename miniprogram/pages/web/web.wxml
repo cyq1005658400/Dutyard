@@ -1,0 +1,2 @@
+<!--miniprogram/pages/web/web.wxml-->
+<web-view src="https://www.dutyard.cn/"></web-view>

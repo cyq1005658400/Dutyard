@@ -1,0 +1,50 @@
+<view class="head">
+  <scroll-view class="subject_scroll" scroll-x="true">
+    <view wx:for="{{subject.length}}" class="choose_box {{flag==index?'choose':'nochoose'}}" id="{{index}}" bindtap="select">{{subject[index]}}</view>
+  </scroll-view>
+</view>
+
+<view class="body">
+  <!--文章列表模板 begin-->
+  <template name="itmes">
+    <navigator url="../../pages/detail/detail?detail_id={{_id}}" hover-class="navigator-hover">
+      <view class="infos">
+        <view wx:if="{{img!=''}}">
+          <view class="haspic">
+            <view class="titleanddis">
+              <view class="item_title">{{title}}</view>
+              <view class="item_dis">{{content}}</view>
+            </view>
+            <view class="date short">{{cTime}}</view>
+          </view>
+
+          <view class="item_pic">
+            <image mode="aspectFill" src="{{img[0]}}" class="pic" background-size="cover" model="scaleToFill"></image>
+          </view>
+        </view>
+
+        <view wx:else>
+          <view class="nopic">
+            <view class="titleanddis">
+              <view class="item_title">{{title}}</view>
+              <view class="item_dis">{{content}}</view>
+            </view>
+            <view class="date long">{{cTime}}</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </template>
+  <!--文章列表模板 end-->
+
+  <!--循环输出列表 begin-->
+  <view wx:if="{{shuzu.length>0}}"  wx:for="{{shuzu}}" class="list">
+    <template is="itmes" data="{{...item}}" />
+  </view>
+  <view wx:if="{{shuzu.length==0}}" class="nocontent">
+    上传你的第一个笔记吧！
+  </view>
+  <button class="btn-block" hover-class="s_btn-block" bindtap="mefuntion">
+    <mp-icon type="field" icon="add" color="white" size="{{25}}"></mp-icon>新建
+  </button>
+</view>

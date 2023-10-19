@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/web/web",
+    "pages/time/time",
+    "pages/list/list",
+    "pages/add/add",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/tools/tools",
+    "pages/ocr/ocr",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7eebff",
+    "navigationBarTitleText": "嘉禾连理小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    },
+    "ocr-plugin": {
+      "version": "3.0.4",
+      "provider": "wx4418e3e031e551be"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

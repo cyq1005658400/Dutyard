@@ -1,0 +1,18 @@
+
+<view  class="play-loud-icon" >
+  <image  src="../../image/play_loud.png" class="play-loud-img play-icon-main {{realPlayType == 'loading' ? 'is-hide' : ''}}" ></image>
+
+  <block  wx:if="{{realPlayType != 'loading'}}">
+
+    <block wx:if="{{realPlayType=='playing'}}">
+        <image  src="../../image/play_loud_1.png" class="play-loud-img play-animation "  ></image>
+        <image  src="../../image/play_loud_2.png"  class="play-loud-img play-animation1"  ></image>
+    </block>
+    <block wx:else>
+        <image  src="../../image/play_loud_1.png" class="play-loud-img" ></image>
+    </block>
+  </block>
+  <block wx:else="{{realPlayType != 'loading'}}">
+    <view class="play-transition"></view>
+  </block>
+</view>

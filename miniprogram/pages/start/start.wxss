@@ -1,0 +1,178 @@
+.title {
+  /* background: linear-gradient(-135deg, rgb(255, 95, 95) 0%, rgb(255, 238, 0) 100%); */
+  background: linear-gradient(45deg, #ffffff 0%, #7eebff 100%);
+  color: #0f96ed;
+  font-family: Arial, sans-serif;
+}
+
+
+.top_swiper {
+  height: 400rpx;
+}
+
+.update {
+  color: skyblue;
+  padding-left: 15rpx;
+  margin-bottom: 10rpx;
+  font-family: Arial, sans-serif;
+}
+
+.update::before {
+  content: "嘉禾连理："
+}
+
+image.top_show {
+  width: 750rpx;
+  height: 400rpx;
+
+  padding-top: 20rpx;
+}
+
+.homepage {
+  width: 100%;
+}
+
+.fun_block {
+  margin-top: 20rpx;
+  width: 750rpx;
+  border-top: skyblue 5rpx solid;
+  float: left;
+}
+
+view.fun_button {
+  width: 355rpx;
+  padding-left: 15rpx;
+  text-align: center;
+  float: left;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.subject {
+  background: linear-gradient(45deg, rgb(250, 236, 160)0%, #f8a09a 100%);
+}
+
+.s_subject {
+  background: linear-gradient(45deg, rgb(209, 198, 134)0%, #c57f7a 100%);
+}
+
+
+.timetable {
+  background-Color: rgb(143, 238, 255);
+  background: linear-gradient(45deg, rgb(58, 225, 255) 0%, rgb(149, 125, 255) 100%);
+}
+
+.booknote {
+  background-Color: rgb(255, 190, 190);
+  background: linear-gradient(45deg, rgb(253, 112, 112) 0%, rgb(255, 194, 114) 100%);
+}
+
+.clock {
+  background-Color: rgb(62, 255, 181);
+  background: linear-gradient(45deg, rgb(64, 255, 112) 0%, rgb(135, 248, 220) 100%);
+}
+
+.wrong {
+  background-Color: rgb(255, 235, 121);
+  background: linear-gradient(45deg, rgb(252, 255, 64) 0%, rgb(180, 248, 135) 100%);
+}
+
+.in_bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+.fun_title {
+  font-weight: bold;
+}
+
+
+
+.s_booknote {
+  background: linear-gradient(45deg, rgb(212, 49, 49) 0%, rgb(205, 212, 96) 100%);
+}
+
+.s_timetable {
+  background: linear-gradient(45deg, rgb(51, 193, 218) 0%, rgb(129, 108, 221) 100%);
+}
+
+.s_wrong {
+  background-color: rgb(252, 222, 54);
+  background: linear-gradient(45deg, rgb(203, 206, 52) 0%, rgb(112, 209, 120) 100%);
+}
+
+.s_clock {
+  background-color: rgb(41, 209, 145);
+  background: linear-gradient(45deg, rgb(53, 212, 93) 0%, rgb(107, 190, 201) 100%);
+}
+
+.logo {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 20rpx 10rpx;
+}
+
+.version {
+  padding-left: 20rpx;
+  display: flex;
+}
+
+.version_title {
+  padding-left: 10rpx;
+  font-size: 2em;
+  font-weight: bold;
+  float: left;
+}
+
+
+.explaination {
+  width: 100%;
+  color: rgb(138, 138, 138);
+  position: fixed;
+  bottom: 2rpx;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.red_line {
+  border-top: skyblue 5rpx solid;
+  width: 100%;
+}
+
+
+
+.simple_timetable {
+  background-Color: rgb(143, 238, 255);
+}
+
+.simple_booknote {
+  background-Color: rgb(255, 190, 190);
+}
+
+.simple_clock {
+  background-Color: rgb(62, 255, 181);
+}
+
+.simple_wrong {
+  background-Color: rgb(255, 235, 121);
+}
+
+
+
+
+
+.simple_s_booknote {
+  background-Color: rgb(219, 165, 165);
+}
+
+.simple_s_timetable {
+  background-color: rgb(73, 228, 255);
+}
+
+.simple_s_wrong {
+  background-color: rgb(252, 222, 54);
+}
+
+.simple_s_clock {
+  background-color: rgb(41, 209, 145);
+}
