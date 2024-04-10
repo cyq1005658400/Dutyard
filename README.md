@@ -8,3 +8,4 @@ Team duty scheduling application.
 - Database: PostgreSQL
 - CI: GitHub Actions
 
+
